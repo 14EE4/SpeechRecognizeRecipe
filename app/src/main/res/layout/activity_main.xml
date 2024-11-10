@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 음성 인식 시작 버튼 -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성 인식 시작"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- 로그를 표시하는 ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/logView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그가 여기에 표시됩니다."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:background="#EEEEEE"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+</RelativeLayout>
